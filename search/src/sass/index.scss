@@ -1,0 +1,56 @@
+@import "common.scss";
+.wrap{
+    width:100%;
+    height:100%;
+    display:  flex;
+    flex-direction:column;
+}
+header{
+    width:100%;
+    height:pxTorem(44px);
+    display:flex;
+    input{
+            flex:1;
+            border:1px solid #ccc;
+    }
+    span{
+        width:pxTorem(120px);
+        height:pxTorem(44px);
+        background:#ccc;
+        text-align:center;
+        line-height:pxTorem(44px);
+        font-size:pxTorem(14px);
+    }
+}
+section{
+    flex:1;
+    overflow: hidden;
+    .list{
+         position: relative;
+         min-height:100%;
+         .up{
+             position: absolute;
+             left:0;
+             bottom:pxTorem(-44px);
+             width:100%;
+             height:pxTorem(44px);
+             background:salmon;
+             text-align:center;
+             line-height:pxTorem(44px);
+             font-size:pxTorem(14px);
+         }
+         .con-list{
+           
+             display:flex;
+             flex-direction: column;
+             font-size:pxTorem(16px);
+             span{
+                 width:pxTorem(120px);
+                 height:pxTorem(30px);
+                 background:#ccc;
+                 text-align:center;
+                 line-height:pxTorem(30px);
+             }
+         }
+    }
+}
